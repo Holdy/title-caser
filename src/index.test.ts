@@ -1,6 +1,4 @@
-'use strict';
-
-const sut = require('../index');
+import { TitleCaser as sut } from './index';
 
 test('Mc style prefixes', () => {
     basic_test('mcdonalds', 'McDonalds');
@@ -36,7 +34,7 @@ test('Spaces should be handled correctly', () => {
     basic_test('   the    others   ', 'The Others');
 });
 
-function basic_test(input, expected_output) {
+function basic_test(input:string, expected_output:string) {
     const output = sut.process(input);
     expect(output).toBe(expected_output);
 
