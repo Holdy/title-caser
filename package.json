@@ -1,5 +1,5 @@
 {
-  "name": "title-caser",
+  "name": "nice-title-case",
   "version": "1.0.0",
   "description": "English centric, consistent title casing",
   "main": "index.js",
